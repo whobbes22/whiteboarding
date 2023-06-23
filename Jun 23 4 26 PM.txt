@@ -1,0 +1,58 @@
+/*
+create an algorithm
+
+determine if all elements in a string are unique
+
+input string - standarad ASCII
+output bool
+
+do not use array methods
+do not convert into an array
+
+if using array
+array.split.sort -> then loop
+
+javascript
+
+function
+
+for(){
+	for(){
+   if(){
+   return false
+   }
+  }
+  return true
+}
+
+
+
+for()
+	if(search the of the string)
+
+
+*/
+
+// string ="" -> true
+// string = "a" -> true
+
+fucntion IsUnique(str){
+	if(str.length <=1){
+  	return true;
+  }
+// str = "abcde"
+// str = "bcde"
+	for(i = 0; i< str.length; i++){
+    if(str.substring(i).search(str.charAt(i-1)) >= 0){
+    	return false
+    }
+  }
+  return true;
+}
+
+
+
+
+
+
+
